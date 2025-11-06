@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="responsive-sidebar.css">
+
+      <title>Responsive sidebar Menu | Dark/Light Mode - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <header class="header" id="header">
+         <div class="header__container">
+            <a href="#" class="header__logo">
+               <span>История заказов [0]</span>
+            </a>
+            <button class="header__toggle" id="header-toggle">
+               <i class="ri-menu-line"></i>
+            </button>
+         </div>
+      </header>
+
+      <!--=============== SIDEBAR ===============-->
+      <nav class="sidebar" id="sidebar">
+         <div class="sidebar__container">
+            <div class="sidebar__user">
+               <div class="sidebar__img">
+                  <img src="images/proflle_image.jpg" alt="image">
+               </div>
+   
+               <div class="sidebar__info">
+                  <h3>Katerina Yakovleva</h3>
+                  <span>shop@omix.com</span>
+               </div>
+            </div>
+
+            <div class="sidebar__content">
+               <div>
+                  <h3 class="sidebar__title">Управление</h3>
+
+                  <div class="sidebar__list">
+                     <a href="#" class="sidebar__link active-link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/woman-shopping-bags.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>История заказов</span>
+                     </a>
+                     
+                     <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/favorite-heart.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Избранные товары</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/users.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Личные данные</span>
+                     </a>
+
+                    <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/vkontakte.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Профили в соц сетях</span>
+                     </a>
+
+                     <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/question_circle.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Поддержка</span>
+                     </a>
+                  </div>
+               </div>
+
+               <div>
+                  <h3 class="sidebar__title">Настроки профиля</h3>
+
+                  <div class="sidebar__list">
+                     <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/settings.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Настройки</span>
+                    </a>
+                    <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/messages.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Сообщения</span>
+                    </a>
+                    <a href="#" class="sidebar__link">
+                        <button class="sidebar__link--button">
+                            <img class="sidebar__link--image" src="images/notifications.svg" alt="Woman shopping bags logo">
+                        </button>
+                        <span>Уведомления</span>
+                    </a>
+                  </div>
+               </div>
+            </div>
+            <div class="sidebar__actions">
+               <button class="sidebar__link--button sidebar__link--button-actions">
+                    <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+                        <span>Тема</span>
+                    </i>
+               </button>
+               <button class="sidebar__link--button sidebar__link--button-actions">
+                     <i class="ri-logout-circle-line sidebar__link sidebar__theme" id="logout-button">
+                        <span>Вийти</span>
+                     </i>
+                </button>
+            </div>
+         </div>
+      </nav>
+
+      <!--=============== MAIN ===============-->
+      <main class="main container" id="main">
+         <section class="sidebar__main-menu">
+            <h1>У вас на данный момент нет заказов</h1>
+            <h4>Исправляйтесь и бегом трать денежки ʕ ᵔᴥᵔ ʔ</h4>
+            <button class="sidebar__main-menu--button">
+               <a href="#" alt="">
+                  Начать покупки
+               </a>
+               <img src="images/woman-shopping-bags__white.svg" alt="">
+            </button>
+         </section>
+      </main>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="active_link.js"></script>
+      <script src="dark-light-theme.js"></script>
+      <script src="show_sidebar.js"></script>
+   </body>
+</html>
